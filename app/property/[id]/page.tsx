@@ -84,7 +84,7 @@ export default function PropertyDetail() {
               <iframe
                 title="Map"
                 className="w-full h-full"
-                src={`https://www.openstreetmap.org/export/embed.html?bbox=144.8,-37.9,145.1,-37.7&layer=mapnik&marker=-37.81,144.96`}
+                src={`https://www.openstreetmap.org/export/embed.html?bbox=147.0,-9.6,147.3,-9.3&layer=mapnik&marker=-9.4438,147.1803`}
               />
             </div>
           </div>

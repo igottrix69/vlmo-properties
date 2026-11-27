@@ -4,9 +4,9 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'VL & MO Properties — Buy · Sell · Rent · Invest',
+  title: 'VL & MO Properties — Papua New Guinea · Buy · Sell · Rent · Invest',
   description:
-    'VL & MO Properties: Trust. Transparency. Opportunity. Discover homes for sale and rent across Australia.',
+    'VL & MO Properties: Trust. Transparency. Opportunity. Discover homes for sale and rent across Papua New Guinea.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

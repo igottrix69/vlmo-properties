@@ -58,10 +58,10 @@ export default function SearchBar({ defaultListing = 'sale' as 'sale' | 'rent' }
           <option value="">Max price</option>
           {listing === 'sale'
             ? [500000, 750000, 1000000, 1500000, 2000000, 3000000].map((n) => (
-                <option key={n} value={n}>${(n / 1000).toFixed(0)}k</option>
+                <option key={n} value={n}>K{(n / 1000).toFixed(0)}k</option>
               ))
-            : [400, 600, 800, 1000, 1500, 2000].map((n) => (
-                <option key={n} value={n}>${n}/wk</option>
+            : [800, 1500, 2500, 3500, 5000, 7500].map((n) => (
+                <option key={n} value={n}>K{n}/wk</option>
               ))}
         </select>
         <button className="md:col-span-2 btn-gold text-base py-3">Search</button>

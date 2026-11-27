@@ -11,6 +11,11 @@ function readLocal(): SiteData {
     const raw = window.localStorage.getItem(KEY)
     if (!raw) return defaultData
     const parsed = JSON.parse(raw) as SiteData
+    // If the seed version has moved on, replace with fresh defaults.
+    if ((parsed.version ?? 0) < defaultData.version) {
+      window.localStorage.setItem(KEY, JSON.stringify(defaultData))
+      return defaultData
+    }
     // Shallow merge to tolerate schema updates
     return {
       ...defaultData,
@@ -79,6 +84,6 @@ export function setAuthed(v: boolean) {
 
 export function formatPrice(p: number, listing: 'sale' | 'rent', label?: string) {
   if (label) return label
-  if (listing === 'rent') return `$${p.toLocaleString()} per week`
-  return `$${p.toLocaleString()}`
+  if (listing === 'rent') return `K${p.toLocaleString()} per week`
+  return `K${p.toLocaleString()}`
 }

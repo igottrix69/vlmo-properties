@@ -31,7 +31,7 @@ function BuyInner() {
   return (
     <div className="container-page py-10">
       <h1 className="font-display text-4xl font-bold text-brand-navy">Properties for sale</h1>
-      <p className="text-gray-600 mt-2">Browse homes, apartments, townhouses and land across Australia.</p>
+      <p className="text-gray-600 mt-2">Browse homes, apartments, townhouses and land across Papua New Guinea.</p>
 
       <div className="mt-6">
         <SearchBar defaultListing="sale" />

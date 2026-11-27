@@ -16,7 +16,7 @@ export default function SellPage() {
               <li>✓ Free, no-obligation property appraisal</li>
               <li>✓ Transparent fee structure — no surprises</li>
               <li>✓ Hand-picked photographers, stylists and copywriters</li>
-              <li>✓ Nationwide buyer database</li>
+              <li>✓ Nationwide PNG buyer database</li>
             </ul>
           </div>
           <div className="bg-white rounded-lg p-6 text-brand-navy shadow-lg">
