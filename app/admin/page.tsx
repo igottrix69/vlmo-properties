@@ -42,7 +42,6 @@ export default function AdminLogin() {
         />
         {error && <p className="mt-3 text-sm text-red-600 text-center">{error}</p>}
         <button className="btn-primary w-full mt-5">Enter</button>
-        <p className="mt-4 text-xs text-gray-500 text-center">Default PIN: 0101 — change it in the dashboard.</p>
       </form>
     </div>
   )
